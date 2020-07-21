@@ -1,0 +1,66 @@
+.color {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 4px;
+    box-shadow: 0 0 40px var(--card-shadow-color);
+}
+
+.shades {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    flex-basis: 75%;
+    overflow: hidden;
+    box-shadow: 0 0 40px var(--card-shadow-color);
+}
+
+.shade {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 10px;
+    letter-spacing: 0.025em;
+    transition: .9s;
+    overflow: hidden;
+}
+
+.shade:hover {
+    color: var(--dark-font-color)!important;
+    cursor: pointer;
+}
+
+.shade>span {
+    display: none;
+}
+
+.shade:hover span {
+    display: inline;
+}
+
+.shade .icon {
+    margin-right: 10px;
+}
+
+.brand {
+    margin-top: 5%;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 40px var(--card-shadow-color);
+}
+
+.brand span {
+    font-size: 14px;
+}

@@ -1,0 +1,67 @@
+:root{
+  --primary-color: #0075F5;
+  --secondary-color: #1FB94D;
+  --heading-color: #01152A;
+  --font-color: #46484b;
+  --dark-font-color: #01152A;
+  --border-color: #e7edf3;
+  --header-border-color: #f1f1f1;
+  --background-color: #ffffff;
+  --input-font-color: #b1b1b1;
+  --card-shadow-color: #e4e8ec;
+}
+
+[data-theme="dark"] {
+  --primary-color: #2c88eb;
+  --secondary-color: #1FB94D;
+  --heading-color: #dde7f1;
+  --font-color: #eeeeee;
+  --dark-font-color: #01152A;
+  --border-color: #01152A;
+  --header-border-color: #01152A;
+  --background-color: #131c25;
+  --input-font-color: #3a3d3f;
+  --card-shadow-color: #1d252c;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+
+::placeholder{
+  color: var(--input-font-color);
+}
+
+body{
+  background: var(--background-color);
+  color: var(--font-color);
+  scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--heading-color);
+  margin-bottom: 30px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

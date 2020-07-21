@@ -1,0 +1,35 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color);
+    overflow: hidden;
+}
+
+.preloader>.loading-ring {
+    height: 50px;
+    width: 50px;
+    border-top: 5px solid var(--primary-color);
+    border-right: 5px solid var(--secondary-color);
+    border-bottom: 5px solid var(--heading-color);
+    border-left: 5px solid var(--font-color);
+    border-radius: 50%;
+    animation: rotate .5s ease-in infinite;
+    transition: .5s;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
